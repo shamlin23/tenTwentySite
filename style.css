@@ -1,0 +1,199 @@
+*,
+*::after,
+::before{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  }
+
+body{
+  margin: 0;  
+ }
+
+header{
+  background-image: url("./images/slide1.jpg");
+  background-size: cover; 
+}
+
+.hero-wrapper{ 
+  /* background-color: red; */
+  margin: 0px 8px 8px 8px;
+}
+
+.menu{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 1px; 
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;  
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav li{
+  font-size: 13px;
+}
+
+.contact-btn{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+  margin-left: 350px;
+  margin-right:2%;
+  margin-bottom: 10px;
+}
+  
+/* End of menu styling */
+
+.hero-caption{
+  padding-left:7.5rem;
+  padding-top: 10rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-welcome-title{
+  margin-bottom: 0px;
+}
+
+.hero-title{
+  margin-bottom: 0px;
+}
+/* Slider styling begins */
+
+.slider-container{
+  display: flex;  
+  align-items: center;  
+  padding-left:7rem;
+}
+
+.slider-box {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;;
+    width: 7.8rem;
+    height: 7.5rem;
+    border: 0.01px solid #EEF4F9;
+    position: relative;
+    opacity: 0.9;
+  }
+  
+.slider-box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    border-top: 0.3rem solid #ffffff;
+    border-right: 0.3rem solid #ffffff;   
+    display : flex;
+  }
+
+  .slider-box-image{
+    position: relative;
+    margin-top: 0.8rem;
+    margin-left: 0.65rem;
+    justify-content: center;    
+  }
+
+  .slider-box-text{
+    color: white;
+    font-size: 0.8rem;   
+    position: absolute;
+    top:35%;
+    left: 32%;
+    text-align: center;    
+  }
+
+  .slider{
+    display: flex;
+    color: white;
+    font-size: 0.5rem;    
+    margin-left: 2rem;
+    margin-top: 2rem;
+    align-content: center;
+  }
+
+  .slider-text{
+    align-content: center;
+  }
+
+  .slider-bar{
+    margin-top: 2rem;
+    background-color: white;
+    height: 0.5px;
+    width: 60px;
+    margin-left: 3rem;
+   }
+
+   /* Content style begins */
+
+   .content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 50%;
+    flex-direction: column;
+    font-size: 2rem;
+    padding-top: 3rem;
+    /* background-color: red; */
+   }
+
+   .content-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+   }  
+
+   p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #7A7777;
+    ;
+   }
+
+   /* Client section styling begins */
+   /* container */
+   .client-slides{
+    position: relative;
+    /* width: 300px; 
+    height: 25px;  */
+    width: 18rem; 
+    height: 2.5px; 
+   }
+   /* slide */
+   .clients{   
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    width: 7rem; 
+    height: 8rem; 
+    border-radius: 50%;
+    transform-origin:  bottom center;
+    transition: transform 0.5s ease-in-out;
+   }
+
+   .clients:nth-child(1) {
+    transform: translate(-450%, 180%) rotate(-25deg); 
+  }
+  
+  .clients:nth-child(2) {
+    transform: translate(30%, 50%) rotate(0deg); 
+  }
+
+  .clients:nth-child(3) {
+    transform: translate(600%, 100%) rotate(30deg); 
+  }
