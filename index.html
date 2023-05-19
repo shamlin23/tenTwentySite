@@ -11,6 +11,7 @@
 </head>
 <body>   
    <header class="hero-section">
+    
     <div class="hero-wrapper">            
             <nav class="menu">
                 <ul>
@@ -36,28 +37,72 @@
             </nav>
               
         <!-- End of desktop navigation menu -->
-
-        <div class="hero-caption">
-            <h5 class="hero-welcome-title">Welcome To TenTwenty Farms</h5>
-            <h1 class="hero-title">From Our Farms <br> 
-                To Your Hands</h1>
-        </div>
-        <div class="slider-container">
-            <div class="slider-box">
-                <div class="slider-box-image">
-                    <img src="./images/bg3.jpg" alt="null" height="90rem" width="100rem">
-                    <div class="slider-box-text">
-                        Next
+        <!-- Slider code start -->
+        <div class="image-container">
+            <div class="slide">
+                <img src="./images/slide1.jpg" height="500vh" width="100%">
+                <div class="hero-caption">
+                    <h5 class="hero-welcome-title">Welcome To TenTwenty Farms</h5>
+                    <h1 class="hero-title">From Our Farms <br> 
+                        To Your Hands</h1>
+                </div>
+                <div class="slider-container">
+                    <div class="slider-box">
+                        <div class="slider-box-image">
+                            <img src="./images/slide2.jpg" alt="null" height="90rem" width="100rem">
+                            <div class="slider-box-text">
+                                Next
+                            </div>
+                        </div> 
+                    </div>          
+                  
+                    <div class="slider">
+                        <div class="slider-text">01</div> 
+                        <div class="slider-bar">
+                               
+                        </div>
+                        <div class="slider-text">04</div> 
                     </div>
                 </div> 
-            </div>          
-            <!-- <div class="slider"></div> -->
-            <div class="slider">
-                <div class="slider-text">01</div> 
-                <div class="slider-bar"></div>
-                <div class="slider-text">04</div> 
+
             </div>
+            <!-- <div class="slide">
+                <img src="./images/slide2.jpg" height="500vh" width="100%">
+            </div>
+            <div class="slide">
+                <img src="./images/bg3.jpg" height="500vh" width="100%">
+            </div>
+            <div class="slide">
+                <img src="./images/slide4.jpg" height="500vh" width="100%">
+            </div> -->
+    
         </div>        
+
+        <!-- <script>
+            var currentIndex = 0;
+            var slides = document.querySelectorAll('.slide');
+          
+            function showSlide(index) {
+              // Remove active class from all slides
+              slides.forEach(function(slide) {
+                slide.classList.remove('active');
+              });
+          
+              // Add active class to the specified slide index
+              slides[index].classList.add('active');
+            }
+          
+            function showNextSlide() {
+              currentIndex = (currentIndex + 1) % slides.length;
+              showSlide(currentIndex);
+            }
+          
+            // Autoplay functionality
+            var intervalId = setInterval(showNextSlide, 5000); 
+          </script> -->
+
+    <!-- Slider code ends -->
+               
     </div>    
    </header>
    <!-- End of header section -->

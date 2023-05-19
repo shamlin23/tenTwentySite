@@ -10,10 +10,10 @@ body{
   margin: 0;  
  }
 
-header{
+/* header{
   background-image: url("./images/slide1.jpg");
   background-size: cover; 
-}
+} */
 
 .hero-wrapper{ 
   /* background-color: red; */
@@ -51,16 +51,43 @@ nav li{
 }
   
 /* End of menu styling */
+/* Start of image sliding */
+
+
+/*  .image-container {
+    position: relative;   
+    display: inline-block;
+  }
+  
+  .slide {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  } */
+
+/* End of image sliding */
+
+.image-container {
+    position: relative;   
+  }
+  
+  .slide {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
 .hero-caption{
-  padding-left:7.5rem;
-  padding-top: 10rem;
-  color: white;
-  font-weight: 400;
-  font-size: 1.8rem;
-  letter-spacing: 0.2rem;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 65%;
+  left: 13%;
+  transform: translate(-50%, -120%);
+  color: #fff;
+
 }
 
 .hero-welcome-title{
@@ -73,20 +100,23 @@ nav li{
 /* Slider styling begins */
 
 .slider-container{
+  position: absolute;
   display: flex;  
-  align-items: center;  
-  padding-left:7rem;
+  align-items: center;   
+  left: 11%;
+  transform: translate(-50%, -180%);
 }
 
 .slider-box {
-    margin-top: 4rem;
-    margin-left: 1rem;
+    margin-top: 2rem;
+   
     margin-bottom: 2rem;;
     width: 7.8rem;
     height: 7.5rem;
     border: 0.01px solid #EEF4F9;
     position: relative;
     opacity: 0.9;
+    zoom: 0.5;
   }
   
 .slider-box::after{
@@ -105,7 +135,8 @@ nav li{
     position: relative;
     margin-top: 0.8rem;
     margin-left: 0.65rem;
-    justify-content: center;    
+    justify-content: center;  
+    opacity: 0.85;  
   }
 
   .slider-box-text{
@@ -122,8 +153,7 @@ nav li{
     color: white;
     font-size: 0.5rem;    
     margin-left: 2rem;
-    margin-top: 2rem;
-    align-content: center;
+    justify-content: space-around;
   }
 
   .slider-text{
@@ -131,11 +161,12 @@ nav li{
   }
 
   .slider-bar{
-    margin-top: 2rem;
+    margin-top: 0.2rem;
     background-color: white;
     height: 0.5px;
     width: 60px;
-    margin-left: 3rem;
+    padding-left: 4px;
+    padding-right: 4px;
    }
 
    /* Content style begins */
@@ -166,7 +197,7 @@ nav li{
    }
 
    /* Client section styling begins */
-   /* container */
+   /* slides container */
    .client-slides{
     position: relative;
     /* width: 300px; 
@@ -174,7 +205,7 @@ nav li{
     width: 18rem; 
     height: 2.5px; 
    }
-   /* slide */
+   /* client slide */
    .clients{   
     position: absolute;
     top: 50%;
