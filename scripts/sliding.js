@@ -56,6 +56,6 @@
     }
 
     // Autoplay functionality
-    var intervalId = setInterval(showNext, 4000); 
+    var intervalId = setInterval(showNext, 3500); 
 
 
